@@ -2,7 +2,7 @@
 
 The Amazon Redshift Checklist is an exhaustive list of all elements you need to have / to test before launching your Redshift cluster into production.
 
-[How To Use](#how-to-use) • [Contributing](#contributing)
+[How to use](#how-to-use) • [Contributing](#contributing)
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ The Amazon Redshift Checklist is an exhaustive list of all elements you need to 
 
 ---
 
-## How to use?
+## How to use
 
 All items in the **Amazon Redshift Checklist** are required for the majority of the projects, but some elements can be omitted or are not essential. We choose to use 3 levels of flexibility:
 
