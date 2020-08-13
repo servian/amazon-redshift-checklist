@@ -1,15 +1,8 @@
-<h1 align="center">Amazon Redshift Checklist</h1>
+# Amazon Redshift Checklist
 
-<h4 align="center">The Amazon Redshift Checklist is an exhaustive list of all elements you need to have / to test before launching your Redshift cluster into production.</h4>
+The Amazon Redshift Checklist is an exhaustive list of all elements you need to have / to test before launching your Redshift cluster into production.
 
-<p align="center">
-  <a href="#how-to-use">How To Use</a  • <a href="#contributing">Contributing</a>
-</p>
-<!-- <p align="center">
-    <span>Other Checklists:</span>
-    <br>
-  <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist#---------front-end-performance-checklist-">🎮 Front-End Performance Checklist</a  • <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist">💎 Front-End Design Checklist</a>
-</p  -->
+[How To Use](#how-to-use) • [Contributing](#contributing)
 
 ## Table of Contents
 
@@ -122,7 +115,3 @@ Some resources possess an emoticon to help you understand which type of content 
 Open an issue or a pull request to suggest changes or additions.
 
 [:arrow_up: back to top](#table-of-contents)
-
-[low_img]: data/images/priority/low.svg
-[medium_img]: data/images/priority/medium.svg
-[high_img]: data/images/priority/high.svg
