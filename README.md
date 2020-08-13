@@ -110,7 +110,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
 - [ ] :green_circle: **Analyse query performance:** `STL_ALERT_EVENT_LOG` table allows users to analyse and improve performance issues.
 
-  - :book: [STL_ALERT_EVENT_LOG](https://docs.amazonaws.cn/en_us/redshift/latest/dg/r_STL_ALERT_EVENT_LOG.html)
+  - :book: [STL_ALERT_EVENT_LOG](https://docs.aws.amazon.com/redshift/latest/dg/r_STL_ALERT_EVENT_LOG.html)
 
 - [ ] :green_circle: **:new: Materialized views:** Consider using materialized views for frequently queried statements or views.
 
@@ -132,7 +132,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
 - [ ] :red_circle: **Cluster encryption:** Ensure cluster encryption is turned on protecting data at rest.
 
-  - :book: [Amazon Redshift database encryption](https://docs.amazonaws.cn/en_us/redshift/latest/mgmt/working-with-db-encryption.html)
+  - :book: [Amazon Redshift database encryption](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html)
 
 - [ ] :red_circle: **Publicly accessible:** Most clusters should not be publicly accessible and therefore should be set to private.
 
