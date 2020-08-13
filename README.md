@@ -23,7 +23,7 @@ The Amazon Redshift Checklist is an exhaustive list of all elements you need to 
 
 All items in the **Amazon Redshift Checklist** are required for the majority of the projects, but some elements can be omitted or are not essential. We choose to use 3 levels of flexibility:
 
-- :red_circle: means that the item is **recommended** but can be omitted in some particular situations.
+- :green_circle: means that the item is **recommended** but can be omitted in some particular situations.
 - :yellow_circle: means that the item is **highly recommended** and can eventually be omitted in some really particular cases.
 - :red_circle: means that the item **can't be omitted** by any reason.
 
@@ -49,7 +49,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Choosing sort keys](https://docs.aws.amazon.com/redshift/latest/dg/t_Sorting_data.html)
 
-- [ ] :red_circle: **Table constraints:** Not enforced by Redshift but helps query optimisers.
+- [ ] :green_circle: **Table constraints:** Not enforced by Redshift but helps query optimisers.
 
   - :book: [Defining constraints](https://docs.aws.amazon.com/redshift/latest/dg/t_Defining_constraints.html)
 
@@ -79,7 +79,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Loading tables with automatic compression](https://docs.aws.amazon.com/redshift/latest/dg/c_Loading_tables_auto_compress.html)
 
-- [ ] :red_circle: **Split data into multiple files:** Split your load data files so that the files are about equal size, between 1 MB and 1 GB after compression.
+- [ ] :green_circle: **Split data into multiple files:** Split your load data files so that the files are about equal size, between 1 MB and 1 GB after compression.
 
   - :book: [Split your load data into multiple files](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-use-multiple-files.html)
 
@@ -101,15 +101,15 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Amazon Redshift introduces AZ64, a new compression encoding for optimized storage and high query performance](https://aws.amazon.com/about-aws/whats-new/2019/10/amazon-redshift-introduces-az64-a-new-compression-encoding-for-optimized-storage-and-high-query-performance/)
 
-- [ ] :red_circle: **Automatic compression:** Use the COPY command with COMPUPDATE set to ON. Note this will impact performance and should only be used on the first load.
+- [ ] :green_circle: **Automatic compression:** Use the COPY command with COMPUPDATE set to ON. Note this will impact performance and should only be used on the first load.
 
   - :book: [ANALYZE COMPRESSION](https://docs.aws.amazon.com/redshift/latest/dg/r_ANALYZE_COMPRESSION.html)
 
-- [ ] :red_circle: **Analyse query performance:** `STL_ALERT_EVENT_LOG` table allows users to analyse and improve performance issues.
+- [ ] :green_circle: **Analyse query performance:** `STL_ALERT_EVENT_LOG` table allows users to analyse and improve performance issues.
 
   - :book: [STL_ALERT_EVENT_LOG](https://docs.amazonaws.cn/en_us/redshift/latest/dg/r_STL_ALERT_EVENT_LOG.html)
 
-- [ ] :red_circle: **:new: Materialized views:** Consider using materialized views for frequently queried statements or views.
+- [ ] :green_circle: **:new: Materialized views:** Consider using materialized views for frequently queried statements or views.
 
   - :book: [Amazon Redshift materialized views support external tables](https://aws.amazon.com/about-aws/whats-new/2020/06/amazon-redshift-materialized-views-support-external-tables/)
 
@@ -194,17 +194,17 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Amazon Redshift introduces RA3 nodes with managed storage enabling independent compute and storage scaling](https://aws.amazon.com/about-aws/whats-new/2019/12/amazon-redshift-announces-ra3-nodes-managed-storage/)
 
-- [ ] :red_circle: **Redshift Spectrum:** Consider Redshift Spectrum allows users to query data straight from S3 using a Redshift cluster. This can be used in replacement of a staging schema whereby your stage data lives within your data lake and is ready into Redshift via Spectrum
+- [ ] :green_circle: **Redshift Spectrum:** Consider Redshift Spectrum allows users to query data straight from S3 using a Redshift cluster. This can be used in replacement of a staging schema whereby your stage data lives within your data lake and is ready into Redshift via Spectrum
 
   - :book: [Getting started with Amazon Redshift Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html)
   - :book: [Why you’re better off exporting your data to Redshift Spectrum, instead of Redshift](https://mixpanel.com/blog/why-youre-better-off-exporting-your-data-to-redshift-spectrum-instead-of-redshift/)
 
-- [ ] :red_circle: **:new: Pause and resume:** Redshift has recently introduced the ability to pause and resume the cluster within minutes.
+- [ ] :green_circle: **:new: Pause and resume:** Redshift has recently introduced the ability to pause and resume the cluster within minutes.
 
   - :book: [Pausing and resuming clusters](https://docs.aws.amazon.com/redshift/latest/mgmt/managing-cluster-operations.html#rs-mgmt-pause-resume-cluster)
   - :wrench: [Redshift Smart Pause and Resume](https://github.com/servian/aws-redshift-smart-pause-and-resume)
 
-- [ ] :red_circle: **:new: Elastic resize:** Consider using elastic resize over classic resize when changing both the node types and number of nodes within your Redshift cluster. Elastic resize is much quicker (minutes vs hours) and doesn't take your cluster out of commision.
+- [ ] :green_circle: **:new: Elastic resize:** Consider using elastic resize over classic resize when changing both the node types and number of nodes within your Redshift cluster. Elastic resize is much quicker (minutes vs hours) and doesn't take your cluster out of commision.
 
   - :book: [Amazon Redshift now supports changing node types within minutes with elastic resize](https://aws.amazon.com/about-aws/whats-new/2020/04/amazon-redshift-now-supports-changing-node-types-within-minutes-with-elastic-resize/)
 
