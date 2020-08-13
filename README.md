@@ -53,7 +53,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Defining constraints](https://docs.aws.amazon.com/redshift/latest/dg/t_Defining_constraints.html)
 
-**[:arrow_up: back to top](#table-of-contents)**
+[:arrow_up: back to top](#table-of-contents)
 
 ---
 
@@ -83,7 +83,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Split your load data into multiple files](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-use-multiple-files.html)
 
-**[:arrow_up: back to top](#table-of-contents)**
+[:arrow_up: back to top](#table-of-contents)
 
 ---
 
@@ -109,7 +109,11 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [STL_ALERT_EVENT_LOG](https://docs.amazonaws.cn/en_us/redshift/latest/dg/r_STL_ALERT_EVENT_LOG.html)
 
-**[:arrow_up: back to top](#table-of-contents)**
+- [ ] **:new: Use RA3 nodes** :o: Consider using Redshift's new RA3 nodes with a mix of local cache and S3 backed elastic storage.
+
+  - :book: [Amazon Redshift introduces RA3 nodes with managed storage enabling independent compute and storage scaling](https://aws.amazon.com/about-aws/whats-new/2019/12/amazon-redshift-announces-ra3-nodes-managed-storage/)
+
+[:arrow_up: back to top](#table-of-contents)
 
 ---
 
@@ -117,7 +121,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
 Open an issue or a pull request to suggest changes or additions.
 
-**[:arrow_up: back to top](#table-of-contents)**
+[:arrow_up: back to top](#table-of-contents)
 
 [low_img]: data/images/priority/low.svg
 [medium_img]: data/images/priority/medium.svg
