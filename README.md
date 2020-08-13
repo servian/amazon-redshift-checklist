@@ -4,6 +4,10 @@ The Amazon Redshift Checklist is an exhaustive list of all elements you need to 
 
 [How to use](#how-to-use) • [Contributing](#contributing)
 
+## Sister Projects
+
+- [Amazon S3 Checklist](https://github.com/servian/amazon-s3-checklist)
+
 ## Table of Contents
 
 1. [Designing Tables](#designing-tables)
