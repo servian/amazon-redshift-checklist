@@ -32,19 +32,19 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Designing Tables
 
-- [ ] **Choosing a data distribution style:** :bangbang: In order to utilise the parallel nature of Redshift, data must be correctly distributed within each table of the cluster.
+- [ ] :bangbang: **Choosing a data distribution style:** In order to utilise the parallel nature of Redshift, data must be correctly distributed within each table of the cluster.
 
   - :book: [Choosing a data distribution style](https://docs.aws.amazon.com/redshift/latest/dg/t_Distributing_data.html)
 
-- [ ] **Choosing a column compression type:** :interrobang: Ensures data is better compressed utilising less storage space.
+- [ ] :interrobang: **Choosing a column compression type:** Ensures data is better compressed utilising less storage space.
 
   - :book: [Choosing a column compression type](https://docs.aws.amazon.com/redshift/latest/dg/t_Compressing_data_on_disk.html)
 
-- [ ] **Choosing sort keys:** :interrobang: Ensures data is retrieved from within each node in the most performant way.
+- [ ] :interrobang: **Choosing sort keys:** Ensures data is retrieved from within each node in the most performant way.
 
   - :book: [Choosing sort keys](https://docs.aws.amazon.com/redshift/latest/dg/t_Sorting_data.html)
 
-- [ ] **Defining constraints:** :o: Not enforced by Redshift but helps query optimisers.
+- [ ] :o: **Defining constraints:** Not enforced by Redshift but helps query optimisers.
 
   - :book: [Defining constraints](https://docs.aws.amazon.com/redshift/latest/dg/t_Defining_constraints.html)
 
@@ -54,27 +54,27 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Loading Data
 
-- [ ] **Use a COPY command to load data from S3:** :bangbang: Load files from S3 to Redshift via COPY to ensure parallel quick loads.
+- [ ] :bangbang: **Use a COPY command to load data from S3:** Load files from S3 to Redshift via COPY to ensure parallel quick loads.
 
   - :book: [Use a COPY command to load data](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-use-copy.html)
 
-- [ ] **Compress your data files:** :interrobang: Use either GZIP, LZOP, BZIP2, or ZSTD.
+- [ ] :interrobang: **Compress your data files:** Use either GZIP, LZOP, BZIP2, or ZSTD.
 
   - :book: [Compress your data files](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-compress-data-files.html)
 
-- [ ] **Use a multi-row insert:** :interrobang: If a COPY command is not an option and you require SQL inserts, use a multi-row insert whenever possible.
+- [ ] :interrobang: **Use a multi-row insert:** If a COPY command is not an option and you require SQL inserts, use a multi-row insert whenever possible.
 
   - :book: [Use a multi-row insert](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-multi-row-inserts.html)
 
-- [ ] **Load data in sort key order:** :interrobang: Load your data in sort key order to avoid needing to vacuum.
+- [ ] :interrobang: **Load data in sort key order:** Load your data in sort key order to avoid needing to vacuum.
 
   - :book: [Load data in sort key order](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-sort-key-order.html)
 
-- [ ] **Loading tables with automatic compression:** :interrobang: Use the COPY command with COMPUPDATE set to ON to automatically set column encoding for brand new tables
+- [ ] :interrobang: **Loading tables with automatic compression:** Use the COPY command with COMPUPDATE set to ON to automatically set column encoding for brand new tables
 
   - :book: [Loading tables with automatic compression](https://docs.aws.amazon.com/redshift/latest/dg/c_Loading_tables_auto_compress.html)
 
-- [ ] **Split your load data into multiple files:** :o: Split your load data files so that the files are about equal size, between 1 MB and 1 GB after compression.
+- [ ] :o: **Split your load data into multiple files:** Split your load data files so that the files are about equal size, between 1 MB and 1 GB after compression.
 
   - :book: [Split your load data into multiple files](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-use-multiple-files.html)
 
@@ -84,27 +84,27 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Performance
 
-- [ ] **Turn on automatic workload management (WLM):** :bangbang: Amazon Redshift determines how many concurrent queries and how much memory is allocated to each dispatched query.
+- [ ] :bangbang: **Turn on automatic workload management (WLM):** Amazon Redshift determines how many concurrent queries and how much memory is allocated to each dispatched query.
 
   - :book: [Implementing workload management](https://docs.aws.amazon.com/redshift/latest/dg/cm-c-implementing-workload-management.html)
 
-- [ ] **Enable concurrency scaling:** :interrobang: Dynamically adds concurrent clusters improving read query concurrency.
+- [ ] :interrobang: **Enable concurrency scaling:** Dynamically adds concurrent clusters improving read query concurrency.
 
   - :book: [Working with concurrency scaling](https://docs.aws.amazon.com/redshift/latest/dg/concurrency-scaling.html)
 
-- [ ] **:new: Use AZ64 column compression encoding:** :interrobang: Consider using Redshift's proprietery new column encoding algorithm AZ64.
+- [ ] :interrobang: **:new: Use AZ64 column compression encoding:** Consider using Redshift's proprietery new column encoding algorithm AZ64.
 
   - :book: [Amazon Redshift introduces AZ64, a new compression encoding for optimized storage and high query performance](https://aws.amazon.com/about-aws/whats-new/2019/10/amazon-redshift-introduces-az64-a-new-compression-encoding-for-optimized-storage-and-high-query-performance/)
 
-- [ ] **Loading tables with automatic compression:** :o: Use the COPY command with COMPUPDATE set to ON. Note this will impact performance and should only be used on the first load.
+- [ ] :o: **Loading tables with automatic compression:** Use the COPY command with COMPUPDATE set to ON. Note this will impact performance and should only be used on the first load.
 
   - :book: [ANALYZE COMPRESSION](https://docs.aws.amazon.com/redshift/latest/dg/r_ANALYZE_COMPRESSION.html)
 
-- [ ] **Analyse query performance:** :o: `STL_ALERT_EVENT_LOG` table allows users to analyse and improve performance issues.
+- [ ] :o: **Analyse query performance:** `STL_ALERT_EVENT_LOG` table allows users to analyse and improve performance issues.
 
   - :book: [STL_ALERT_EVENT_LOG](https://docs.amazonaws.cn/en_us/redshift/latest/dg/r_STL_ALERT_EVENT_LOG.html)
 
-- [ ] **:new: Use RA3 nodes** :o: Consider using Redshift's new RA3 nodes with a mix of local cache and S3 backed elastic storage.
+- [ ] :o: **:new: Use RA3 nodes** Consider using Redshift's new RA3 nodes with a mix of local cache and S3 backed elastic storage.
 
   - :book: [Amazon Redshift introduces RA3 nodes with managed storage enabling independent compute and storage scaling](https://aws.amazon.com/about-aws/whats-new/2019/12/amazon-redshift-announces-ra3-nodes-managed-storage/)
 
@@ -114,23 +114,23 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Security
 
-- [ ] **Enable Redshift encryption:** :bangbang: Ensure cluster encryption is turned on protecting data at rest.
+- [ ] :bangbang: **Enable Redshift encryption:** Ensure cluster encryption is turned on protecting data at rest.
 
   - :book: [Amazon Redshift database encryption](https://docs.amazonaws.cn/en_us/redshift/latest/mgmt/working-with-db-encryption.html)
 
-- [ ] **Change Redshift cluster publicly accessible settings:** :bangbang: Most clusters should not be publicly accessible and therefore should be set to private.
+- [ ] :bangbang: **Change Redshift cluster publicly accessible settings:** Most clusters should not be publicly accessible and therefore should be set to private.
 
   - :book: [How can I make a private Amazon Redshift cluster publicly accessible?](https://aws.amazon.com/premiumsupport/knowledge-center/redshift-cluster-private-public/)
 
-- [ ] **Enable enhanced VPC routing:** :bangbang: Forces all COPY and UNLOAD traffic between your cluster and your data repositories through your Amazon VPC.
+- [ ] :bangbang: **Enable enhanced VPC routing:** Forces all COPY and UNLOAD traffic between your cluster and your data repositories through your Amazon VPC.
 
   - :book: [Amazon Redshift enhanced VPC routing](https://docs.aws.amazon.com/redshift/latest/mgmt/enhanced-vpc-routing.html)
 
-- [ ] **User groups:** :bangbang: Create different user groups and grant privileges based on their roles.
+- [ ] :bangbang: **User groups:** Create different user groups and grant privileges based on their roles.
 
   - :book: [Example for controlling user and group access](https://docs.aws.amazon.com/redshift/latest/dg/t_user_group_examples.html)
 
-- [ ] **:new: Federated user access:** :interrobang: Consider providing user access via SAML-2.0 using AD FS, PingFederate, Okta, or Azure AD.
+- [ ] :interrobang: **:new: Federated user access:** Consider providing user access via SAML-2.0 using AD FS, PingFederate, Okta, or Azure AD.
 
   - :book: [Federate Database User Authentication Easily with IAM and Amazon Redshift](https://aws.amazon.com/blogs/big-data/federate-database-user-authentication-easily-with-iam-and-amazon-redshift/)
   - :book: [Federate Amazon Redshift access with Microsoft Azure AD single sign-on](https://aws.amazon.com/blogs/big-data/federate-amazon-redshift-access-with-microsoft-azure-ad-single-sign-on/)
@@ -143,31 +143,31 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Monitoring
 
-- [ ] **Use Redshift Advisor:** :bangbang: Redshift advisor analyses your cluster and makes recommendation to improve performance and decrease costs.
+- [ ] :bangbang: **Use Redshift Advisor:** Redshift advisor analyses your cluster and makes recommendation to improve performance and decrease costs.
 
   - :book: [Viewing Amazon Redshift Advisor recommendations on the console](https://docs.aws.amazon.com/redshift/latest/dg/access-advisor.html)
 
-- [ ] **Long running queries:** :bangbang: Set an alarm to notify users when queries are running for longer than expected using the QueryDuration CloudWatch metric.
+- [ ] :bangbang: **Long running queries:** Set an alarm to notify users when queries are running for longer than expected using the QueryDuration CloudWatch metric.
 
   - :book: [Amazon Redshift performance data](https://docs.aws.amazon.com/redshift/latest/mgmt/metrics-listing.html)
 
-- [ ] **Underutilised or Over Utilised Cluster:** :bangbang: Check if your cluster is under utilised or over utilised using the CPUUtilisation CloudWatch metric.
+- [ ] :bangbang: **Underutilised or Over Utilised Cluster:** Check if your cluster is under utilised or over utilised using the CPUUtilisation CloudWatch metric.
 
   - :book: [Amazon Redshift performance data](https://docs.aws.amazon.com/redshift/latest/mgmt/metrics-listing.html)
 
-- [ ] **Disk space usage:** :bangbang:Check if your cluster is running out of disk space and whether you need to consider scaling using the PercentageDiskSpaceUsed metric.
+- [ ] :bangbang: **Disk space usage:**Check if your cluster is running out of disk space and whether you need to consider scaling using the PercentageDiskSpaceUsed metric.
 
   - :book: [Amazon Redshift performance data](https://docs.aws.amazon.com/redshift/latest/mgmt/metrics-listing.html)
 
-- [ ] **:new: Enable CloudWatch Anomaly Detection:** :bangbang: Applies machine-learning algorithms to the metric's past data to create a model of the metric's expected values.
+- [ ] :bangbang: **:new: Enable CloudWatch Anomaly Detection:** Applies machine-learning algorithms to the metric's past data to create a model of the metric's expected values.
 
   - :book: [Using CloudWatch Anomaly Detection](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Anomaly_Detection.html)
 
-- [ ] **Analyse Workload Performance:** :interrobang: Optimise your cluster based on how much time queries spend on different stages of processing.
+- [ ] :interrobang: **Analyse Workload Performance:** Optimise your cluster based on how much time queries spend on different stages of processing.
 
   - :book: [Analyzing workload performance](https://docs.aws.amazon.com/redshift/latest/mgmt/analyze-workload-performance.html)
 
-- [ ] **Advanced Redshift Monitoring:** :interrobang: Use Lambda and CloudWatch events to generate alarms for common possible issues.
+- [ ] :interrobang: **Advanced Redshift Monitoring:** Use Lambda and CloudWatch events to generate alarms for common possible issues.
 
   - :wrench: [Redshift Advance Monitoring](https://github.com/awslabs/amazon-redshift-monitoring)
 
