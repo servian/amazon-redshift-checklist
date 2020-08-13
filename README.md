@@ -205,7 +205,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [ModifySnapshotCopyRetentionPeriod](https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifySnapshotCopyRetentionPeriod.html)
 
-- [ ] :yellow_circle: **:new: RA3 nodes** Consider using Redshift's new RA3 nodes with a mix of local cache and S3 backed elastic storage if compute requirements exceed dense compute or dense storage node levels.
+- [ ] :yellow_circle: **:new: RA3 nodes:** Consider using Redshift's new RA3 nodes with a mix of local cache and S3 backed elastic storage if compute requirements exceed dense compute or dense storage node levels.
 
   - :book: [Amazon Redshift introduces RA3 nodes with managed storage enabling independent compute and storage scaling](https://aws.amazon.com/about-aws/whats-new/2019/12/amazon-redshift-announces-ra3-nodes-managed-storage/)
 
