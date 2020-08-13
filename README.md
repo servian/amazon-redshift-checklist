@@ -150,6 +150,10 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Amazon Redshift introduces support for multi-factor authentication](https://aws.amazon.com/about-aws/whats-new/2020/04/amazon-redshift-introduces-support-multi-factor-authentication/)
 
+- [ ] :green_circle: **:new: Column-level access control:** Consider implementing column-level access controls to restrict users from accessing certain columns.
+
+  - :book: [Announcing column-level access control for Amazon Redshift](https://aws.amazon.com/about-aws/whats-new/2020/03/announcing-column-level-access-control-for-amazon-redshift/)
+
 [:arrow_up: back to top](#table-of-contents)
 
 ---
