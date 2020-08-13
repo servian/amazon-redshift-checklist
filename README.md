@@ -117,6 +117,10 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Working with short query acceleration](https://docs.aws.amazon.com/redshift/latest/dg/wlm-short-query-acceleration.html)
 
+- [ ] :green_circle: **Elastic resize scheduling:** Consider scheduling an elastic cluster resize for nightly ETL workloads or to accommodate heavier workloads during the day as well as shrinking a cluster to accommodate lighter workloads at specific times of day. 
+
+  - :book: [Amazon Redshift now supports elastic resize scheduling](https://aws.amazon.com/about-aws/whats-new/2019/11/amazon-redshift-supports-elastic-resize-scheduling/)
+
 [:arrow_up: back to top](#table-of-contents)
 
 ---
