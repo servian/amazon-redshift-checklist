@@ -1,6 +1,6 @@
 # Amazon Redshift Checklist
 
-The Amazon Redshift Checklist is an exhaustive list of all elements you need to have / to test before launching your Redshift cluster into production.
+The Amazon Redshift Checklist aims to be an exhaustive list of all elements you need to have / to test before launching your Redshift cluster into production.
 
 [How to use](#how-to-use) • [Contributing](#contributing)
 
@@ -78,7 +78,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Load data in sort key order](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-sort-key-order.html)
 
-- [ ] :yellow_circle: **Automatic compression:** Use the COPY command with `COMPUPDATE` set to ON to automatically set column encoding for brand new tables
+- [ ] :yellow_circle: **Automatic compression:** Use the COPY command with `COMPUPDATE` set to `ON` to automatically set column encoding for new tables.
 
   - :book: [Loading tables with automatic compression](https://docs.aws.amazon.com/redshift/latest/dg/c_Loading_tables_auto_compress.html)
 
@@ -104,7 +104,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Amazon Redshift introduces AZ64, a new compression encoding for optimized storage and high query performance](https://aws.amazon.com/about-aws/whats-new/2019/10/amazon-redshift-introduces-az64-a-new-compression-encoding-for-optimized-storage-and-high-query-performance/)
 
-- [ ] :green_circle: **Automatic compression:** Use the COPY command with COMPUPDATE set to ON. Note this will impact performance and should only be used on the first load.
+- [ ] :green_circle: **Automatic compression:** Use the COPY command with `COMPUPDATE` set to `OFF`. Running compression computing every time on an already known data set will decrease performance.
 
   - :book: [ANALYZE COMPRESSION](https://docs.aws.amazon.com/redshift/latest/dg/r_ANALYZE_COMPRESSION.html)
 
@@ -116,7 +116,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Amazon Redshift materialized views support external tables](https://aws.amazon.com/about-aws/whats-new/2020/06/amazon-redshift-materialized-views-support-external-tables/)
 
-- [ ] :green_circle: **Short query acceleration (SQA):** Consider turning SQA on (on by default). SQA runs short-running queries in a dedicated space, so that SQA queries aren't forced to wait in queues behind longer queries. 
+- [ ] :green_circle: **Short query acceleration (SQA):** Consider turning SQA on (if off, on by default on new clusters). SQA runs short-running queries in a dedicated space, so that SQA queries aren't forced to wait in queues behind longer queries. 
 
   - :book: [Working with short query acceleration](https://docs.aws.amazon.com/redshift/latest/dg/wlm-short-query-acceleration.html)
 
@@ -167,7 +167,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Monitoring
 
-- [ ] :red_circle: **Redshift Advisor:** Redshift advisor analyses your cluster and makes recommendation to improve performance and decrease costs.
+- [ ] :red_circle: **Redshift advisor:** Redshift advisor analyses your cluster and makes recommendation to improve performance and decrease costs.
 
   - :book: [Viewing Amazon Redshift Advisor recommendations on the console](https://docs.aws.amazon.com/redshift/latest/dg/access-advisor.html)
 
@@ -175,7 +175,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Amazon Redshift performance data](https://docs.aws.amazon.com/redshift/latest/mgmt/metrics-listing.html)
 
-- [ ] :red_circle: **Underutilised or Over Utilised Cluster:** Check if your cluster is under utilised or over utilised using the CPUUtilisation CloudWatch metric.
+- [ ] :red_circle: **Underutilised or over utilised cluster:** Check if your cluster is under utilised or over utilised using the `CPUUtilisation` CloudWatch metric.
 
   - :book: [Amazon Redshift performance data](https://docs.aws.amazon.com/redshift/latest/mgmt/metrics-listing.html)
 
@@ -209,12 +209,12 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Amazon Redshift introduces RA3 nodes with managed storage enabling independent compute and storage scaling](https://aws.amazon.com/about-aws/whats-new/2019/12/amazon-redshift-announces-ra3-nodes-managed-storage/)
 
-- [ ] :green_circle: **Redshift Spectrum:** Consider Redshift Spectrum allows users to query data straight from S3 using a Redshift cluster. This can be used in replacement of a staging schema whereby your stage data lives within your data lake and is ready into Redshift via Spectrum
+- [ ] :green_circle: **Redshift Spectrum:** Consider using Redshift Spectrum to allow users to query data straight from S3 using their Redshift cluster. This can be used in replacement of a staging schema whereby your staged data lives within your data lake and is read into Redshift via Spectrum.
 
   - :book: [Getting started with Amazon Redshift Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html)
   - :book: [Why you’re better off exporting your data to Redshift Spectrum, instead of Redshift](https://mixpanel.com/blog/why-youre-better-off-exporting-your-data-to-redshift-spectrum-instead-of-redshift/)
 
-- [ ] :green_circle: **:new: Pause and resume:** Redshift has recently introduced the ability to pause and resume the cluster within minutes.
+- [ ] :green_circle: **:new: Pause and resume:** Redshift has recently introduced the ability to pause and resume the cluster within minutes. Take advantage of this feature for non-production clusters to save money.
 
   - :book: [Pausing and resuming clusters](https://docs.aws.amazon.com/redshift/latest/mgmt/managing-cluster-operations.html#rs-mgmt-pause-resume-cluster)
   - :wrench: [Redshift Smart Pause and Resume](https://github.com/servian/aws-redshift-smart-pause-and-resume)
