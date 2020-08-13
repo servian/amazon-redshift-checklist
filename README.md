@@ -31,19 +31,19 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Designing Tables
 
-- [ ] **Choosing a Data Distribution Style:** :bangbang: In order to utilise the parallel nature of Redshift, data must be correctly distributed within each table of the cluster.
+- [ ] **Choosing a data distribution style:** :bangbang: In order to utilise the parallel nature of Redshift, data must be correctly distributed within each table of the cluster.
 
   - :book: [Choosing a data distribution style](https://docs.aws.amazon.com/redshift/latest/dg/t_Distributing_data.html)
 
-- [ ] **Choosing a Column Compression Type:** :interrobang: Ensures data is better compressed utilising less storage space.
+- [ ] **Choosing a column compression type:** :interrobang: Ensures data is better compressed utilising less storage space.
 
   - :book: [Choosing a column compression type](https://docs.aws.amazon.com/redshift/latest/dg/t_Compressing_data_on_disk.html)
 
-- [ ] **Choosing Sort Keys:** :interrobang: Ensures data is retrieved from within each node in the most performant way.
+- [ ] **Choosing sort keys:** :interrobang: Ensures data is retrieved from within each node in the most performant way.
 
   - :book: [Choosing sort keys](https://docs.aws.amazon.com/redshift/latest/dg/t_Sorting_data.html)
 
-- [ ] **Defining Constraints:** :o: Not enforced by Redshift but helps query optimisers.
+- [ ] **Defining constraints:** :o: Not enforced by Redshift but helps query optimisers.
 
   - :book: [Defining constraints](https://docs.aws.amazon.com/redshift/latest/dg/t_Defining_constraints.html)
 
@@ -61,15 +61,15 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Compress your data files](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-compress-data-files.html)
 
-- [ ] **Use a Multi-Row Insert:** :interrobang: If a COPY command is not an option and you require SQL inserts, use a multi-row insert whenever possible.
+- [ ] **Use a multi-row insert:** :interrobang: If a COPY command is not an option and you require SQL inserts, use a multi-row insert whenever possible.
 
   - :book: [Use a multi-row insert](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-multi-row-inserts.html)
 
-- [ ] **Load data in Sort Key Order:** :interrobang: Load your data in sort key order to avoid needing to vacuum.
+- [ ] **Load data in sort key order:** :interrobang: Load your data in sort key order to avoid needing to vacuum.
 
   - :book: [Load data in sort key order](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-sort-key-order.html)
 
-- [ ] **Loading tables with Automatic Compression:** :interrobang: Use the COPY command with COMPUPDATE set to ON to automatically set column encoding for brand new tables
+- [ ] **Loading tables with automatic compression:** :interrobang: Use the COPY command with COMPUPDATE set to ON to automatically set column encoding for brand new tables
 
   - :book: [Loading tables with automatic compression](https://docs.aws.amazon.com/redshift/latest/dg/c_Loading_tables_auto_compress.html)
 
@@ -83,11 +83,11 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Performance
 
-- [ ] **Turn on Automatic WLM:** :bangbang: Amazon Redshift determines how many concurrent queries and how much memory is allocated to each dispatched query.
+- [ ] **Turn on automatic workload management (WLM):** :bangbang: Amazon Redshift determines how many concurrent queries and how much memory is allocated to each dispatched query.
 
   - :book: [Implementing workload management](https://docs.aws.amazon.com/redshift/latest/dg/cm-c-implementing-workload-management.html)
 
-- [ ] **Enable Concurrency Scaling:** :interrobang: Dynamically adds concurrent clusters improving read query concurrency.
+- [ ] **Enable concurrency scaling:** :interrobang: Dynamically adds concurrent clusters improving read query concurrency.
 
   - :book: [Working with concurrency scaling](https://docs.aws.amazon.com/redshift/latest/dg/concurrency-scaling.html)
 
@@ -95,7 +95,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Amazon Redshift introduces AZ64, a new compression encoding for optimized storage and high query performance](https://aws.amazon.com/about-aws/whats-new/2019/10/amazon-redshift-introduces-az64-a-new-compression-encoding-for-optimized-storage-and-high-query-performance/)
 
-- [ ] **Loading tables with Automatic Compression:** :o: Use the COPY command with COMPUPDATE set to ON. Note this will impact performance and should only be used on the first load.
+- [ ] **Loading tables with automatic compression:** :o: Use the COPY command with COMPUPDATE set to ON. Note this will impact performance and should only be used on the first load.
 
   - :book: [ANALYZE COMPRESSION](https://docs.aws.amazon.com/redshift/latest/dg/r_ANALYZE_COMPRESSION.html)
 
@@ -117,11 +117,11 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Amazon Redshift database encryption](https://docs.amazonaws.cn/en_us/redshift/latest/mgmt/working-with-db-encryption.html)
 
-- [ ] **Change Redshift cluster Publicly Accessible settings:** :bangbang: Most clusters should not be publicly accessible and therefore should be set to private.
+- [ ] **Change Redshift cluster publicly accessible settings:** :bangbang: Most clusters should not be publicly accessible and therefore should be set to private.
 
   - :book: [How can I make a private Amazon Redshift cluster publicly accessible?](https://aws.amazon.com/premiumsupport/knowledge-center/redshift-cluster-private-public/)
 
-- [ ] **Enable Enhanced VPC Routing:** :bangbang: Forces all COPY and UNLOAD traffic between your cluster and your data repositories through your Amazon VPC.
+- [ ] **Enable enhanced VPC routing:** :bangbang: Forces all COPY and UNLOAD traffic between your cluster and your data repositories through your Amazon VPC.
 
   - :book: [Amazon Redshift enhanced VPC routing](https://docs.aws.amazon.com/redshift/latest/mgmt/enhanced-vpc-routing.html)
 
