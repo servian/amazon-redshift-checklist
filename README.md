@@ -9,6 +9,7 @@ The Amazon Redshift Checklist is an exhaustive list of all elements you need to 
 1. [Designing Tables](#designing-tables)
 2. [Loading Data](#loading-data)
 3. [Performance](#performance)
+4. [Security](#security)
 
 ---
 
