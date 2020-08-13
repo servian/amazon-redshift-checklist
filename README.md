@@ -40,6 +40,7 @@ Some resources possess an emoticon to help you understand which type of content 
 - [ ] :red_circle: **Table distribution styles:** In order to utilise the parallel nature of Redshift, data must be correctly distributed within each table of the cluster.
 
   - :book: [Choosing a data distribution style](https://docs.aws.amazon.com/redshift/latest/dg/t_Distributing_data.html)
+  - :book: [Amazon Redshift now recommends distribution keys for improved query performance](https://aws.amazon.com/about-aws/whats-new/2019/08/amazon-redshift-now-recommends-distribution-keys-for-improved-query-performance/)
 
 - [ ] :yellow_circle: **Column compression:** Ensures data is better compressed utilising less storage space.
 
@@ -48,8 +49,10 @@ Some resources possess an emoticon to help you understand which type of content 
 - [ ] :yellow_circle: **Table sort keys:** Ensures data is retrieved from within each node in the most performant way.
 
   - :book: [Choosing sort keys](https://docs.aws.amazon.com/redshift/latest/dg/t_Sorting_data.html)
+  - :book: [Amazon Redshift now supports changing table sort keys dynamically](https://aws.amazon.com/about-aws/whats-new/2019/11/amazon-redshift-supports-changing-table-sort-keys-dynamically/)
+  - :book: [Amazon Redshift now recommends sort keys for improved query performance](https://aws.amazon.com/about-aws/whats-new/2020/03/amazon-redshift-now-recommends-sort-keys-for-improved-query-performance/)
 
-- [ ] :green_circle: **Table constraints:** Not enforced by Redshift but helps query optimisers.
+- [ ] :green_circle: **Table constraints:** Uniqueness, primary key, and foreign key constraints are informational only; they are not enforced by Amazon Redshift. Nonetheless, primary keys and foreign keys are used as planning hints and they should be declared if your ETL process or some other process in your application enforces their integrity.
 
   - :book: [Defining constraints](https://docs.aws.amazon.com/redshift/latest/dg/t_Defining_constraints.html)
 
@@ -59,7 +62,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Loading Data
 
-- [ ] :red_circle: **COPY command:** Load files from S3 to Redshift via COPY to ensure parallel quick loads.
+- [ ] :red_circle: **COPY command:** Loads data into a table from data files or from an Amazon DynamoDB table. The files can be located in an Amazon Simple Storage Service (Amazon S3) bucket, an Amazon EMR cluster, or a remote host that is accessed using a Secure Shell (SSH) connection.
 
   - :book: [Use a COPY command to load data](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-use-copy.html)
 
