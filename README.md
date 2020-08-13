@@ -10,6 +10,7 @@ The Amazon Redshift Checklist is an exhaustive list of all elements you need to 
 2. [Loading Data](#loading-data)
 3. [Performance](#performance)
 4. [Security](#security)
+5. [Monitoring](#monitoring)
 
 ---
 
@@ -135,6 +136,40 @@ Some resources possess an emoticon to help you understand which type of content 
   - :book: [Federate Amazon Redshift access with Microsoft Azure AD single sign-on](https://aws.amazon.com/blogs/big-data/federate-amazon-redshift-access-with-microsoft-azure-ad-single-sign-on/)
   - :book: [Federate Amazon Redshift access with Okta as an identity provider](https://aws.amazon.com/blogs/big-data/federate-amazon-redshift-access-with-okta-as-an-identity-provider/)
   - :book: [Options for providing IAM credentials](https://docs.aws.amazon.com/redshift/latest/mgmt/options-for-providing-iam-credentials.html)
+
+[:arrow_up: back to top](#table-of-contents)
+
+---
+
+## Monitoring
+
+- [ ] **Use Redshift Advisor:** :bangbang: Redshift advisor analyses your cluster and makes recommendation to improve performance and decrease costs.
+
+  - :book: [Viewing Amazon Redshift Advisor recommendations on the console](https://docs.aws.amazon.com/redshift/latest/dg/access-advisor.html)
+
+- [ ] **Long running queries:** :bangbang: Set an alarm to notify users when queries are running for longer than expected using the QueryDuration CloudWatch metric.
+
+  - :book: [Amazon Redshift performance data](https://docs.aws.amazon.com/redshift/latest/mgmt/metrics-listing.html)
+
+- [ ] **Underutilised or Over Utilised Cluster:** :bangbang: Check if your cluster is under utilised or over utilised using the CPUUtilisation CloudWatch metric.
+
+  - :book: [Amazon Redshift performance data](https://docs.aws.amazon.com/redshift/latest/mgmt/metrics-listing.html)
+
+- [ ] **Disk space usage:** :bangbang:Check if your cluster is running out of disk space and whether you need to consider scaling using the PercentageDiskSpaceUsed metric.
+
+  - :book: [Amazon Redshift performance data](https://docs.aws.amazon.com/redshift/latest/mgmt/metrics-listing.html)
+
+- [ ] **:new: Enable CloudWatch Anomaly Detection:** :bangbang: Applies machine-learning algorithms to the metric's past data to create a model of the metric's expected values.
+
+  - :book: [Using CloudWatch Anomaly Detection](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Anomaly_Detection.html)
+
+- [ ] **Analyse Workload Performance:** :interrobang: Optimise your cluster based on how much time queries spend on different stages of processing.
+
+  - :book: [Analyzing workload performance](https://docs.aws.amazon.com/redshift/latest/mgmt/analyze-workload-performance.html)
+
+- [ ] **Advanced Redshift Monitoring:** :interrobang: Use Lambda and CloudWatch events to generate alarms for common possible issues.
+
+  - :wrench: [Redshift Advance Monitoring](https://github.com/awslabs/amazon-redshift-monitoring)
 
 [:arrow_up: back to top](#table-of-contents)
 
