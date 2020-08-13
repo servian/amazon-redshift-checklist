@@ -110,6 +110,35 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ---
 
+## Security
+
+- [ ] **Enable Redshift encryption:** :bangbang: Ensure cluster encryption is turned on protecting data at rest.
+
+  - :book: [Amazon Redshift database encryption](https://docs.amazonaws.cn/en_us/redshift/latest/mgmt/working-with-db-encryption.html)
+
+- [ ] **Change Redshift cluster Publicly Accessible settings:** :bangbang: Most clusters should not be publicly accessible and therefore should be set to private.
+
+  - :book: [How can I make a private Amazon Redshift cluster publicly accessible?](https://aws.amazon.com/premiumsupport/knowledge-center/redshift-cluster-private-public/)
+
+- [ ] **Enable Enhanced VPC Routing:** :bangbang: Forces all COPY and UNLOAD traffic between your cluster and your data repositories through your Amazon VPC.
+
+  - :book: [Amazon Redshift enhanced VPC routing](https://docs.aws.amazon.com/redshift/latest/mgmt/enhanced-vpc-routing.html)
+
+- [ ] **User groups:** :bangbang: Create different user groups and grant privileges based on their roles.
+
+  - :book: [Example for controlling user and group access](https://docs.aws.amazon.com/redshift/latest/dg/t_user_group_examples.html)
+
+- [ ] **:new: Federated user access:** :interrobang: Consider providing user access via SAML-2.0 using AD FS, PingFederate, Okta, or Azure AD.
+
+  - :book: [Federate Database User Authentication Easily with IAM and Amazon Redshift](https://aws.amazon.com/blogs/big-data/federate-database-user-authentication-easily-with-iam-and-amazon-redshift/)
+  - :book: [Federate Amazon Redshift access with Microsoft Azure AD single sign-on](https://aws.amazon.com/blogs/big-data/federate-amazon-redshift-access-with-microsoft-azure-ad-single-sign-on/)
+  - :book: [Federate Amazon Redshift access with Okta as an identity provider](https://aws.amazon.com/blogs/big-data/federate-amazon-redshift-access-with-okta-as-an-identity-provider/)
+  - :book: [Options for providing IAM credentials](https://docs.aws.amazon.com/redshift/latest/mgmt/options-for-providing-iam-credentials.html)
+
+[:arrow_up: back to top](#table-of-contents)
+
+---
+
 ## Contributing
 
 Open an issue or a pull request to suggest changes or additions.
