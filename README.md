@@ -182,13 +182,13 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ## Cluster
 
-- [ ] :bangbang: **:new: RA3 nodes** Consider using Redshift's new RA3 nodes with a mix of local cache and S3 backed elastic storage if compute requirements exceed dense compute or dense storage node levels.
-
-  - :book: [Amazon Redshift introduces RA3 nodes with managed storage enabling independent compute and storage scaling](https://aws.amazon.com/about-aws/whats-new/2019/12/amazon-redshift-announces-ra3-nodes-managed-storage/)
-
 - [ ] :bangbang: **Automated snapshot retention:** The default retention period of 1 day can catch organisations out in case of disaster recovery or rollback. Conside changing to 35 days.
 
   - :book: [ModifySnapshotCopyRetentionPeriod](https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifySnapshotCopyRetentionPeriod.html)
+
+- [ ] :interrobang: **:new: RA3 nodes** Consider using Redshift's new RA3 nodes with a mix of local cache and S3 backed elastic storage if compute requirements exceed dense compute or dense storage node levels.
+
+  - :book: [Amazon Redshift introduces RA3 nodes with managed storage enabling independent compute and storage scaling](https://aws.amazon.com/about-aws/whats-new/2019/12/amazon-redshift-announces-ra3-nodes-managed-storage/)
 
 - [ ] :o: **Redshift Spectrum:** Consider Redshift Spectrum allows users to query data straight from S3 using a Redshift cluster. This can be used in replacement of a staging schema whereby your stage data lives within your data lake and is ready into Redshift via Spectrum
 
