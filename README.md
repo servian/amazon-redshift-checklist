@@ -113,6 +113,10 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Amazon Redshift materialized views support external tables](https://aws.amazon.com/about-aws/whats-new/2020/06/amazon-redshift-materialized-views-support-external-tables/)
 
+- [ ] :green_circle: **Short query acceleration (SQA):** Consider turning SQA on (on by default). SQA runs short-running queries in a dedicated space, so that SQA queries aren't forced to wait in queues behind longer queries. 
+
+  - :book: [Working with short query acceleration](https://docs.aws.amazon.com/redshift/latest/dg/wlm-short-query-acceleration.html)
+
 [:arrow_up: back to top](#table-of-contents)
 
 ---
