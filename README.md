@@ -82,7 +82,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Loading tables with automatic compression](https://docs.aws.amazon.com/redshift/latest/dg/c_Loading_tables_auto_compress.html)
 
-- [ ] :green_circle: **split data into multiple files:** Split your load data files so that the files are about equal size, between 1 MB and 1 GB after compression.
+- [ ] :green_circle: **Split data into multiple files:** Split your load data files so that the files are about equal size, between 1 MB and 1 GB after compression.
 
   - :book: [Split your load data into multiple files](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-use-multiple-files.html)
 
@@ -160,6 +160,11 @@ Some resources possess an emoticon to help you understand which type of content 
 - [ ] :yellow_circle: **:new: Enable multi-factor authentication (MFA):** Consider enabling MFA for production workloads.
 
   - :book: [Amazon Redshift introduces support for multi-factor authentication](https://aws.amazon.com/about-aws/whats-new/2020/04/amazon-redshift-introduces-support-multi-factor-authentication/)
+
+- [ ] :yellow_circle: **Use Secrets Manager for service accounts:** Configure AWS Secrets Manager to automatically rotate Amazon Redshift passwords for service accounts. Secrets Manager uses a Lambda function provided by Secrets Manager.
+
+  - :book: [Rotating Secrets for Amazon Redshift](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets-redshift.html)
+  - :book: [Enabling Rotation for an Amazon Redshift Secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/enable-rotation-redshift.html)
 
 - [ ] :green_circle: **:new: Use column-level access control:** Consider implementing column-level access controls to restrict users from accessing certain columns.
 
