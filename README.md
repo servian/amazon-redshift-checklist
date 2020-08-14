@@ -180,7 +180,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Viewing Amazon Redshift Advisor recommendations on the console](https://docs.aws.amazon.com/redshift/latest/dg/access-advisor.html)
 
-- [ ] :red_circle: **Monitor long running queries:** Set an alarm to notify users when queries are running for longer than expected using the QueryDuration CloudWatch metric.
+- [ ] :red_circle: **Monitor long running queries:** Set an alarm to notify users when queries are running for longer than expected using the `QueryDuration` CloudWatch metric.
 
   - :book: [Amazon Redshift performance data](https://docs.aws.amazon.com/redshift/latest/mgmt/metrics-listing.html)
 
@@ -188,13 +188,18 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Amazon Redshift performance data](https://docs.aws.amazon.com/redshift/latest/mgmt/metrics-listing.html)
 
-- [ ] :red_circle: **Monitor disk space usage:** Check if your cluster is running out of disk space and whether you need to consider scaling using the PercentageDiskSpaceUsed metric.
+- [ ] :red_circle: **Monitor disk space usage:** Check if your cluster is running out of disk space and whether you need to consider scaling using the `PercentageDiskSpaceUsed` metric.
 
   - :book: [Amazon Redshift performance data](https://docs.aws.amazon.com/redshift/latest/mgmt/metrics-listing.html)
 
 - [ ] :red_circle: **:new: Enable CloudWatch anomaly detection:** Applies machine-learning algorithms to the metric's past data to create a model of the metric's expected values.
 
   - :book: [Using CloudWatch Anomaly Detection](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Anomaly_Detection.html)
+
+- [ ] :red_circle: **Query monitoring rules:** Define metrics-based performance boundaries for WLM queues and specify what action to take when a query goes beyond those boundaries..
+
+  - :book: [WLM query monitoring rules](https://docs.aws.amazon.com/redshift/latest/dg/cm-c-wlm-query-monitoring-rules.html)
+  - :wrench: [WLM QMR Rule Candidates](https://github.com/awslabs/amazon-redshift-utils/blob/master/src/AdminScripts/wlm_qmr_rule_candidates.sql)
 
 - [ ] :yellow_circle: **Analyse workload performance:** Optimise your cluster based on how much time queries spend on different stages of processing.
 
