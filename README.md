@@ -104,13 +104,13 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [Amazon Redshift introduces AZ64, a new compression encoding for optimized storage and high query performance](https://aws.amazon.com/about-aws/whats-new/2019/10/amazon-redshift-introduces-az64-a-new-compression-encoding-for-optimized-storage-and-high-query-performance/)
 
+- [ ] :yellow_circle: **Analyse query performance:** `STL_ALERT_EVENT_LOG` table allows users to analyse and improve performance issues.
+
+  - :book: [STL_ALERT_EVENT_LOG](https://docs.aws.amazon.com/redshift/latest/dg/r_STL_ALERT_EVENT_LOG.html)
+
 - [ ] :green_circle: **Disable automatic compression:** Use the COPY command with `COMPUPDATE` set to `OFF`. Running compression computing every time on an already known data set will decrease performance.
 
   - :book: [ANALYZE COMPRESSION](https://docs.aws.amazon.com/redshift/latest/dg/r_ANALYZE_COMPRESSION.html)
-
-- [ ] :green_circle: **Analyse query performance:** `STL_ALERT_EVENT_LOG` table allows users to analyse and improve performance issues.
-
-  - :book: [STL_ALERT_EVENT_LOG](https://docs.aws.amazon.com/redshift/latest/dg/r_STL_ALERT_EVENT_LOG.html)
 
 - [ ] :green_circle: **:new: Use materialized views:** Materialized views can significantly boost query performance for repeated and predictable analytical workloads such as dashboarding, queries from business intelligence (BI) tools, and ELT (Extract, Load, Transform) data processing.
 
