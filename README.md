@@ -166,7 +166,7 @@ Some resources possess an emoticon to help you understand which type of content 
   - :book: [Rotating Secrets for Amazon Redshift](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets-redshift.html)
   - :book: [Enabling Rotation for an Amazon Redshift Secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/enable-rotation-redshift.html)
 
-- [ ] :green_circle: **:new: Use column-level access control:** Consider implementing column-level access controls to restrict users from accessing certain columns.
+- [ ] :green_circle: **:new: Use column-level access controls:** Consider implementing column-level access controls to restrict users from accessing certain columns.
 
   - :book: [Announcing column-level access control for Amazon Redshift](https://aws.amazon.com/about-aws/whats-new/2020/03/announcing-column-level-access-control-for-amazon-redshift/)
 
