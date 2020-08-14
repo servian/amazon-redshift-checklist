@@ -200,12 +200,13 @@ Some resources possess an emoticon to help you understand which type of content 
 
   - :book: [WLM query monitoring rules](https://docs.aws.amazon.com/redshift/latest/dg/cm-c-wlm-query-monitoring-rules.html)
   - :wrench: [WLM QMR Rule Candidates](https://github.com/awslabs/amazon-redshift-utils/blob/master/src/AdminScripts/wlm_qmr_rule_candidates.sql)
+  - :wrench: [QMRNotificationUtility](https://github.com/awslabs/amazon-redshift-utils/tree/master/src/QMRNotificationUtility)
 
 - [ ] :yellow_circle: **Analyse workload performance:** Optimise your cluster based on how much time queries spend on different stages of processing.
 
   - :book: [Analyzing workload performance](https://docs.aws.amazon.com/redshift/latest/mgmt/analyze-workload-performance.html)
 
-- [ ] :yellow_circle: **Use advanced Redshift monitoring:** Use Lambda and CloudWatch events to generate alarms for common possible issues.
+- [ ] :yellow_circle: **Use Redshift Advance Monitoring:** This GitHub project provides an advance monitoring system for Amazon Redshift that is completely serverless, based on AWS Lambda and Amazon CloudWatch. A serverless Lambda function runs on a schedule, connects to the configured Redshift cluster, and generates CloudWatch custom alarms for common possible issues.
 
   - :wrench: [Redshift Advance Monitoring](https://github.com/awslabs/amazon-redshift-monitoring)
 
