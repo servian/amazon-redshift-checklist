@@ -187,6 +187,7 @@ Some resources possess an emoticon to help you understand which type of content 
 - [ ] :red_circle: **Monitor underutilised or over utilised clusters:** Check if your cluster is under utilised or over utilised using the `CPUUtilisation` CloudWatch metric.
 
   - :book: [Amazon Redshift performance data](https://docs.aws.amazon.com/redshift/latest/mgmt/metrics-listing.html)
+  - :wrench: [isitfit](https://github.com/autofitcloud/isitfit)
 
 - [ ] :red_circle: **Monitor disk space usage:** Check if your cluster is running out of disk space and whether you need to consider scaling using the `PercentageDiskSpaceUsed` metric.
 
