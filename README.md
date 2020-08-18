@@ -1,6 +1,6 @@
 # Amazon Redshift Checklist
 
-The Amazon Redshift Checklist aims to be an exhaustive list of all elements you need to have / to test before launching your Redshift cluster into production.
+This checklist aims to be an exhaustive list of all elements you should consider when using Amazon Redshift.
 
 ## Table of Contents
 
@@ -26,8 +26,8 @@ All items in the **Amazon Redshift Checklist** are required for the majority of 
 Some resources possess an emoticon to help you understand which type of content/help you may find on the checklist:
 
 - :book: documentation or article
-- :wrench: online tool/testing tool
-- :video_camera: media or video content
+- :wrench: online tool
+- :video_camera: media
 
 ## Sister Projects
 
