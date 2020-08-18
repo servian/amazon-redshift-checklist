@@ -51,6 +51,7 @@ Some resources possess an emoticon to help you understand which type of content 
   - :book: [Choosing sort keys](https://docs.aws.amazon.com/redshift/latest/dg/t_Sorting_data.html)
   - :book: [Amazon Redshift now supports changing table sort keys dynamically](https://aws.amazon.com/about-aws/whats-new/2019/11/amazon-redshift-supports-changing-table-sort-keys-dynamically/)
   - :book: [Amazon Redshift now recommends sort keys for improved query performance](https://aws.amazon.com/about-aws/whats-new/2020/03/amazon-redshift-now-recommends-sort-keys-for-improved-query-performance/)
+  - :book: [Compound and Interleaved Sort Keys](https://aws.amazon.com/blogs/big-data/amazon-redshift-engineerings-advanced-table-design-playbook-compound-and-interleaved-sort-keys/)
 
 - [ ] :green_circle: **Define table constraints:** Uniqueness, primary key, and foreign key constraints are informational only; they are not enforced by Amazon Redshift. Nonetheless, primary keys and foreign keys are used as planning hints and they should be declared if your ETL process or some other process in your application enforces their integrity.
 
@@ -107,6 +108,7 @@ Some resources possess an emoticon to help you understand which type of content 
 - [ ] :yellow_circle: **Analyse query performance:** `STL_ALERT_EVENT_LOG` table allows users to analyse and improve performance issues.
 
   - :book: [STL_ALERT_EVENT_LOG](https://docs.aws.amazon.com/redshift/latest/dg/r_STL_ALERT_EVENT_LOG.html)
+  - :book: [Evaluating the query plan](https://docs.aws.amazon.com/redshift/latest/dg/c_data_redistribution.html)
 
 - [ ] :green_circle: **Disable automatic compression:** Use the COPY command with `COMPUPDATE` set to `OFF`. Running compression computing every time on an already known data set will decrease performance.
 
