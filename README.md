@@ -49,6 +49,7 @@ In order to utilise the parallel nature of Redshift, data must be correctly dist
 Ensures data is better compressed utilising less storage space.
 
 - :book: [Choosing a column compression type](https://docs.aws.amazon.com/redshift/latest/dg/t_Compressing_data_on_disk.html)
+- :book: [Use AZ64 column compression encoding](#yellow_circle-new-use-az64-column-compression-encoding)
 
 ### :yellow_circle: Select appropriate table sort keys
 
