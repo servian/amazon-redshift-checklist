@@ -17,15 +17,13 @@ The Amazon Redshift Checklist aims to be an exhaustive list of all elements you 
 5. [Monitoring](#monitoring)
 6. [Cluster](#cluster)
 
----
-
 ## How to use
 
 All items in the **Amazon Redshift Checklist** are required for the majority of the projects, but some elements can be omitted or are not essential. We choose to use 3 levels of flexibility:
 
-- :green_circle: means that the item is **recommended** but can be omitted in some particular situations.
-- :yellow_circle: means that the item is **highly recommended** and can eventually be omitted in some really particular cases.
-- :red_circle: means that the item **can't be omitted** by any reason.
+- :red_circle: means the item **can't be omitted** for any reason.
+- :yellow_circle: means the item is **highly recommended** and can eventually be omitted in some really particular cases.
+- :green_circle: means the item is **recommended** but can be omitted in some particular situations.
 
 Some resources possess an emoticon to help you understand which type of content / help you may find on the checklist:
 
@@ -33,13 +31,11 @@ Some resources possess an emoticon to help you understand which type of content 
 - :wrench: online tool / testing tool
 - :video_camera: media or video content
 
----
-
 ## Designing Tables
 
 ### :red_circle: Select an appropriate table distribution style
 
-In order to utilise the parallel nature of Redshift, data must be correctly distributed within each table of the cluster.
+In order to utilise the parallel nature of Redshift, data must be correctly distributed within each table of the cluster. Tables not distributed correctly (based on their query patterns) will generally lead to poor query performance.
 
 - :book: [Choosing a data distribution style](https://docs.aws.amazon.com/redshift/latest/dg/t_Distributing_data.html)
 - :book: [Amazon Redshift now recommends distribution keys for improved query performance](https://aws.amazon.com/about-aws/whats-new/2019/08/amazon-redshift-now-recommends-distribution-keys-for-improved-query-performance/)
@@ -68,8 +64,6 @@ Uniqueness, primary key, and foreign key constraints are informational only; the
 
 [:arrow_up: back to top](#table-of-contents)
 
----
-
 ## Loading Data
 
 ### :red_circle: Use the COPY command
@@ -80,9 +74,11 @@ Loads data into a table from data files or from an Amazon DynamoDB table. The fi
 
 ### :yellow_circle: Compress data files
 
-Use either GZIP, LZOP, BZIP2, or ZSTD.
+Compressed files generally load faster. Use either GZIP, LZOP, BZIP2, or ZSTD.
 
 - :book: [Compress your data files](https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices-compress-data-files.html)
+- :book: [Redshift database benchmarks: COPY performance with compressed files
+  ](https://www.stitchdata.com/blog/redshift-database-benchmarks-copy-performance-with-compressed-files/)
 
 ### :yellow_circle: Use multi-row inserts
 
@@ -110,8 +106,6 @@ Split your load data files so that the files are about equal size, between 1 MB 
 
 [:arrow_up: back to top](#table-of-contents)
 
----
-
 ## Performance
 
 ### :red_circle: Enable automatic workload management (WLM)
@@ -125,6 +119,7 @@ Amazon Redshift determines how many concurrent queries and how much memory is al
 Dynamically adds concurrent clusters improving read query concurrency.
 
 - :book: [Working with concurrency scaling](https://docs.aws.amazon.com/redshift/latest/dg/concurrency-scaling.html)
+- :book: [Concurrency Scaling pricing](https://aws.amazon.com/redshift/pricing/#Concurrency_Scaling_pricing)
 
 ### :yellow_circle: :new: Use AZ64 column compression encoding
 
@@ -170,8 +165,6 @@ Consider using `TRUNCATE` instead of `DELETE` when creating transient tables. `T
 - :book: [TRUNCATE](https://docs.aws.amazon.com/redshift/latest/dg/r_TRUNCATE.html)
 
 [:arrow_up: back to top](#table-of-contents)
-
----
 
 ## Security
 
@@ -229,8 +222,6 @@ Consider implementing column-level access controls to restrict users from access
 
 [:arrow_up: back to top](#table-of-contents)
 
----
-
 ## Monitoring
 
 ### :red_circle: Action Redshift advisor recommendations
@@ -286,8 +277,6 @@ This GitHub project provides an advance monitoring system for Amazon Redshift th
 
 [:arrow_up: back to top](#table-of-contents)
 
----
-
 ## Cluster
 
 ### :red_circle: Increase automated snapshot retention
@@ -308,6 +297,8 @@ Consider using Redshift Spectrum to allow users to query data straight from S3 u
 
 - :book: [Getting started with Amazon Redshift Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html)
 - :book: [Why you’re better off exporting your data to Redshift Spectrum, instead of Redshift](https://mixpanel.com/blog/why-youre-better-off-exporting-your-data-to-redshift-spectrum-instead-of-redshift/)
+- :book: [Redshift Spectrum pricing
+  ](https://aws.amazon.com/redshift/pricing/#Redshift_Spectrum_pricing)
 
 ### :green_circle: :new: Pause and resume clusters
 
@@ -323,8 +314,6 @@ Consider using elastic resize over classic resize when changing both the node ty
 - :book: [Amazon Redshift now supports changing node types within minutes with elastic resize](https://aws.amazon.com/about-aws/whats-new/2020/04/amazon-redshift-now-supports-changing-node-types-within-minutes-with-elastic-resize/)
 
 [:arrow_up: back to top](#table-of-contents)
-
----
 
 ## Contributing
 
