@@ -288,6 +288,7 @@ Consider using Redshift's new RA3 nodes with a mix of local cache and S3 backed 
 
 - :book: [Amazon Redshift introduces RA3 nodes with managed storage enabling independent compute and storage scaling](https://aws.amazon.com/about-aws/whats-new/2019/12/amazon-redshift-announces-ra3-nodes-managed-storage/)
 - :video_camera: [AWS re:Invent 2019: [NEW LAUNCH!] Amazon Redshift reimagined: RA3 and AQUA (ANT230)](https://www.youtube.com/watch?v=6pZrE_tveLI)
+- :video_camera: [Amazon Redshift RA3 Nodes: Overview and How to Upgrade](https://www.youtube.com/watch?v=dSfB-zJRtJM)
 
 #### :green_circle: Use Redshift Spectrum
 
