@@ -113,6 +113,7 @@ Split your load data files so that the files are about equal size, between 1 MB 
 Amazon Redshift determines how many concurrent queries and how much memory is allocated to each dispatched query.
 
 - :book: [Implementing workload management](https://docs.aws.amazon.com/redshift/latest/dg/cm-c-implementing-workload-management.html)
+- :video_camera: [Managing Concurrent Workloads with Amazon Redshift](https://www.youtube.com/watch?v=TsHyT-BrSOI)
 
 #### :yellow_circle: Enable concurrency scaling
 
@@ -120,6 +121,7 @@ Dynamically adds concurrent clusters improving read query concurrency.
 
 - :book: [Working with concurrency scaling](https://docs.aws.amazon.com/redshift/latest/dg/concurrency-scaling.html)
 - :book: [Concurrency Scaling pricing](https://aws.amazon.com/redshift/pricing/#Concurrency_Scaling_pricing)
+- :video_camera: [Amazon Redshift Concurrency Scaling](https://youtu.be/-2yQsI9xJKQ)
 
 #### :yellow_circle: :new: Use AZ64 column compression encoding
 
@@ -133,6 +135,7 @@ Consider using Redshift's proprietary new column encoding algorithm AZ64.
 
 - :book: [STL_ALERT_EVENT_LOG](https://docs.aws.amazon.com/redshift/latest/dg/r_STL_ALERT_EVENT_LOG.html)
 - :book: [Evaluating the query plan](https://docs.aws.amazon.com/redshift/latest/dg/c_data_redistribution.html)
+- :video_camera: [Query Monitoring with Amazon Redshift](https://www.youtube.com/watch?v=Wdvb5iYVnLg)
 
 #### :green_circle: Disable automatic compression
 
@@ -284,6 +287,7 @@ The default retention period of 1 day can catch organisations out in case of dis
 Consider using Redshift's new RA3 nodes with a mix of local cache and S3 backed elastic storage if compute requirements exceed dense compute or dense storage node levels.
 
 - :book: [Amazon Redshift introduces RA3 nodes with managed storage enabling independent compute and storage scaling](https://aws.amazon.com/about-aws/whats-new/2019/12/amazon-redshift-announces-ra3-nodes-managed-storage/)
+- :video_camera: [AWS re:Invent 2019: [NEW LAUNCH!] Amazon Redshift reimagined: RA3 and AQUA (ANT230)](https://www.youtube.com/watch?v=6pZrE_tveLI)
 
 #### :green_circle: Use Redshift Spectrum
 
@@ -291,8 +295,8 @@ Consider using Redshift Spectrum to allow users to query data straight from S3 u
 
 - :book: [Getting started with Amazon Redshift Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html)
 - :book: [Why you’re better off exporting your data to Redshift Spectrum, instead of Redshift](https://mixpanel.com/blog/why-youre-better-off-exporting-your-data-to-redshift-spectrum-instead-of-redshift/)
-- :book: [Redshift Spectrum pricing
-  ](https://aws.amazon.com/redshift/pricing/#Redshift_Spectrum_pricing)
+- :book: [Redshift Spectrum pricing](https://aws.amazon.com/redshift/pricing/#Redshift_Spectrum_pricing)
+- :video_camera: [Cost and usage controls for Amazon Redshift](https://www.youtube.com/watch?v=CYVBHA_9_zM)
 
 #### :green_circle: :new: Pause and resume clusters
 
