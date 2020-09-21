@@ -12,6 +12,7 @@ This checklist aims to be an exhaustive list of all elements you should consider
   - [Performance](#performance)
   - [Security](#security)
   - [Monitoring](#monitoring)
+  - [Consumption](#consumption)
   - [Cluster](#cluster)
 - [Contributing](#contributing)
 
@@ -274,11 +275,21 @@ This GitHub project provides an advance monitoring system for Amazon Redshift th
 
 - :wrench: [Redshift Advance Monitoring](https://github.com/awslabs/amazon-redshift-monitoring)
 
+### Consumption
+
+#### :yellow_circle: :new: Use Data API
+
+Using this API, you can access Amazon Redshift data with web services–based applications, including AWS Lambda, AWS AppSync, Amazon SageMaker notebooks, and AWS Cloud9.
+
+- :book: [Announcing Data API for Amazon Redshift
+](https://aws.amazon.com/about-aws/whats-new/2020/09/announcing-data-api-for-amazon-redshift/)
+- :book: [Using the Amazon Redshift Data API](https://docs.aws.amazon.com/redshift/latest/mgmt/data-api.html)
+
 ### Cluster
 
 #### :red_circle: Increase automated snapshot retention
 
-The default retention period of 1 day can catch organisations out in case of disaster recovery or rollback. Consider changing to 35 days.
+The default retention period of 1 day can catch organisations out in case of disaster recovery or rollback. Consider changing to 35 days. You can use the HTTP endpoint to run SQL statements without managing connections. Calls to the Data API are asynchronous.
 
 - :book: [ModifySnapshotCopyRetentionPeriod](https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifySnapshotCopyRetentionPeriod.html)
 
